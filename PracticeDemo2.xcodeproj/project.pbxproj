@@ -15,6 +15,8 @@
 		15C755F21F5011EB00B667C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C755F01F5011EB00B667C5 /* LaunchScreen.storyboard */; };
 		15C755FD1F5011EB00B667C5 /* PracticeDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C755FC1F5011EB00B667C5 /* PracticeDemo2Tests.m */; };
 		15C756081F5011EB00B667C5 /* PracticeDemo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C756071F5011EB00B667C5 /* PracticeDemo2UITests.m */; };
+		15C7561A1F5012BC00B667C5 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C756191F5012BC00B667C5 /* NSObject+Swizzling.m */; };
+		15C756291F502EDE00B667C5 /* KXSafeHandlerCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C756281F502EDE00B667C5 /* KXSafeHandlerCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		15C756031F5011EB00B667C5 /* PracticeDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C756071F5011EB00B667C5 /* PracticeDemo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticeDemo2UITests.m; sourceTree = "<group>"; };
 		15C756091F5011EB00B667C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C756181F5012BC00B667C5 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		15C756191F5012BC00B667C5 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		15C756271F502EDE00B667C5 /* KXSafeHandlerCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXSafeHandlerCategory.h; sourceTree = "<group>"; };
+		15C756281F502EDE00B667C5 /* KXSafeHandlerCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXSafeHandlerCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				15C755F01F5011EB00B667C5 /* LaunchScreen.storyboard */,
 				15C755F31F5011EB00B667C5 /* Info.plist */,
 				15C755E21F5011EB00B667C5 /* Supporting Files */,
+				15C756181F5012BC00B667C5 /* NSObject+Swizzling.h */,
+				15C756191F5012BC00B667C5 /* NSObject+Swizzling.m */,
+				15C756271F502EDE00B667C5 /* KXSafeHandlerCategory.h */,
+				15C756281F502EDE00B667C5 /* KXSafeHandlerCategory.m */,
 			);
 			path = PracticeDemo2;
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					15C755DE1F5011EB00B667C5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 66TV2DKPY8;
 						ProvisioningStyle = Automatic;
 					};
 					15C755F71F5011EB00B667C5 = {
@@ -276,6 +287,8 @@
 				15C755EA1F5011EB00B667C5 /* ViewController.m in Sources */,
 				15C755E71F5011EB00B667C5 /* AppDelegate.m in Sources */,
 				15C755E41F5011EB00B667C5 /* main.m in Sources */,
+				15C756291F502EDE00B667C5 /* KXSafeHandlerCategory.m in Sources */,
+				15C7561A1F5012BC00B667C5 /* NSObject+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -424,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66TV2DKPY8;
 				INFOPLIST_FILE = PracticeDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.PracticeDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +450,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66TV2DKPY8;
 				INFOPLIST_FILE = PracticeDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.PracticeDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
